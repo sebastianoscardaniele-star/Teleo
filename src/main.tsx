@@ -407,7 +407,23 @@ function App() {
 
             <label>
               Valoración: {rating} estrella(s)
-              <input type="range" min="1" max="5" value={rating} onChange={(event) => setRating(Number(event.target.value))} />
+              const [rating, setRating] = useState(0)
+
+<div style={{ display: "flex", gap: "5px" }}>
+  {[1, 2, 3, 4, 5].map((star) => (
+    <span
+      key={star}
+      onClick={() => setRating(star)}
+      style={{
+        cursor: "pointer",
+        fontSize: "30px",
+        color: star <= rating ? "gold" : "gray"
+      }}
+    >
+      ★
+    </span>
+  ))}
+</div>>
             </label>
 
             <div className="gridTwo">
