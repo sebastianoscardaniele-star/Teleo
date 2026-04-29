@@ -24,43 +24,6 @@ type Review = {
   comments: string[]
   hidden?: boolean
 }
-
-const initialReviews: Review[] = [
-  {
-    id: 1,
-    title: 'The Bear',
-    description: 'Serie intensa, rápida y con personajes muy buenos.',
-    category: 'Series',
-    rating: 5,
-    price: '',
-    address: '',
-    photoNames: ['demo-serie.jpg'],
-    comments: ['La tengo pendiente.', 'Muy buena recomendación.']
-  },
-  {
-    id: 2,
-    title: 'Café de la esquina',
-    description: 'Buen café, medialunas excelentes y ambiente tranquilo.',
-    category: 'Restaurantes',
-    rating: 4,
-    price: '$$',
-    address: 'Buenos Aires',
-    photoNames: ['demo-cafe.jpg'],
-    comments: []
-  },
-  {
-    id: 3,
-    title: 'Hábitos atómicos',
-    description: 'Libro claro para ordenar rutinas y mejorar de a poco.',
-    category: 'Libros',
-    rating: 5,
-    price: '',
-    address: '',
-    photoNames: ['demo-libro.jpg'],
-    comments: []
-  }
-]
-
 function App() {
   const [view, setView] = useState<View>('inicio')
   const [selectedCategory, setSelectedCategory] = useState('Todas')
