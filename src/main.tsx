@@ -247,7 +247,7 @@ function App() {
 
   return <main>
     <header className="header">
-      <div><h1>Club de Reseñas</h1><p>Reseñas compartidas entre amigos</p></div>
+      <div><h1>Club de Reseñas NUEVO</h1><p>Reseñas compartidas entre amigos</p></div>
       <nav>
         <button className={view === 'inicio' ? 'active' : ''} onClick={() => setView('inicio')}>Inicio</button>
         <button className={view === 'resenas' ? 'active' : ''} onClick={() => setView('resenas')}>Reseñas</button>
